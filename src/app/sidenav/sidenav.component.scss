@@ -1,0 +1,83 @@
+
+// .img {
+//     background-image: url(/assets/img/apartment.png);
+//     background-repeat: no-repeat;
+//     height: 80px; 
+//     background-color: #ffffff;
+//     background-size: 110px;
+// }
+
+.pi {
+    color: #4baaf5;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
+ul li {
+   display: flex;
+   line-height: 2rem; 
+   transition: 0.2s;
+   flex-wrap: nowrap;
+   align-items: center;
+   color: #1e293b;
+}
+
+ul li span {
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.root .menu {
+    align-items: center;
+    display: flex;
+    padding-left: 0.5rem;
+    border-bottom: 1px solid var(--blue-100);
+}
+.root .sub-menu {
+    display: none;
+}
+
+.root .menu:hover {
+    // box-shadow: 0px 4px 50px #D9DDFC;
+    background:var(--blue-100) ;
+    cursor: pointer;
+    color: #2196F3;
+}
+
+.root ul li span {
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.root ul li {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.root li {
+    display: flex;
+    flex-wrap: nowrap;
+    border-bottom: 1px solid var(--blue-100);
+}
+
+.root li:hover {
+    // box-shadow: 0px 4px 50px #D9DDFC;
+    background:var(--blue-100) ;
+    cursor: pointer;
+    color: #2196F3;
+}
+
+.dropdown {
+    font-size: 12px !important;
+    justify-content: end;
+    display: flex;
+    right: 0;
+    position: absolute;
+    transition: 0.3s;
+}
+.rotate {
+    transition: 0.3s;
+    transform: rotate(90deg);
+}

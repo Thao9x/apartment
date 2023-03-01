@@ -1,0 +1,32 @@
+<div class="flex justify-content-between shadow-5 bg-white col-12 p-2 align-items-center z-2 fixed h-3rem" clickOutside>
+    <div id="toggle" class=" col-6 align-items-center flex menu-left">
+        <img src="/assets/img/apartment.png" height="50px" alt="" />
+        <i class="pi pi-angle-right cursor-pointer" *ngIf="!isShowToggle" (click)="changeIcon()"></i>
+        <i class="pi pi-angle-left cursor-pointer" *ngIf="isShowToggle" (click)="changeIconClose()"></i>
+        <span class="pl-3">Apartment Dashboard</span>
+    </div>
+    <div class="col-6 p-0 flex justify-content-end pr-2" clickOutside>
+        <div class="profile-dropdown">
+            <div class="profile-dropdown-btn">
+                <span style="font-size: 14px;">Welcome! Ole</span>
+                <p-avatar image="https://primefaces.org/cdn/primeng/images/demo/avatar/onyamalimba.png"
+                    class="cursor-pointer" shape="circle" (click)="toggle()"
+                    (clickOutside)="clickedOutside()"></p-avatar>
+            </div>
+            <ul id="profile" class="profile-dropdown-list shadow-4 fadein">
+                <li class="profile-dropdown-lits-item">
+                    <a href="">
+                        <i class="pi pi-user cursor-pointer"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li class="profile-dropdown-lits-item">
+                    <a href="">
+                        <i class="pi pi-sign-out cursor-pointer"></i>
+                        <span>Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

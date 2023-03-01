@@ -1,0 +1,110 @@
+.img {
+    background-image: url(/assets/img/apartment.png);
+    background-repeat: no-repeat;
+    height: 80px; 
+    background-color: #ffffff;
+    background-size: 110px;
+}
+
+.menu-left .pi {
+    font-size: 1.25rem;
+    height: 2rem;
+    width: 2rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-left .pi:hover {
+    background-color: #E0E0E0;
+    color: aliceblue;
+    border-radius: 50%;
+}
+
+#profile{
+    transition: 0.3s;
+}
+
+.profile-dropdown {
+    position: relative;
+    width: fit-content;
+}
+
+.profile-dropdown ul {
+    list-style: none;
+    padding: 0;
+}
+
+.profile-dropdown-btn {
+    display: flex;
+    width: 130px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.profile-dropdown-list {
+    position: absolute;
+    width: 170px;
+    right: -9px;
+    z-index: 2;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: none;
+}
+
+.profile-dropdown-list.active {
+    // max-height: 200;
+    transition: 0.3s;
+    display: unset;
+}
+
+.profile-dropdown-list.active::before{
+    content: "";
+    transform: rotate(45deg);
+    top: -7px;
+    position: absolute;
+    width: 15px;
+    right: 17px;
+    height: 15px;
+    display: flex;
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+.profile-dropdown-lits-item {
+    padding: 0.5rem;
+    transition: 0.5s;
+}
+
+.profile-dropdown-lits-item:hover{
+    background-color: var(--surface-200);
+    border-radius: 5px;
+}
+
+.profile-dropdown-lits-item a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: black;
+    padding: 0.25rem;
+}
+
+.profile-dropdown-lits-item i {
+    font-size: 14px ;
+    margin-right: 7px;
+}
+
+.profile-dropdown-lits-item span {
+    font-size: 14px ;
+}
+
+.fadein {
+    animation: fadein 0.5s linear !important;
+}

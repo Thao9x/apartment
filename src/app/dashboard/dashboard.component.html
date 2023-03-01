@@ -1,0 +1,140 @@
+<div class="grid col-12 m-0">
+    <div class="col-3 pl-0">
+        <div class="bg-white border-round-sm shadow-4 h-full">
+            <div class="col-12 p-0 h-full">
+                <span class="block p-2">Khách</span>
+                <span class="block p-2">10 / ngày</span>
+                <img src="/assets/img/graph-tasks.svg" width="100%" />
+            </div>
+        </div>
+    </div>
+    <div class="col-3 pl-0">
+        <div class="bg-white border-round-sm shadow-4 h-full">
+            <div class="col-12 p-0 h-full">
+                <span class="block p-2">Phản hồi</span>
+                <span class="block p-2">1 / tháng</span>
+                <img src="/assets/img/graph-purchases.svg" width="100%" />
+            </div>
+        </div>
+    </div>
+    <div class="col-3 pl-0">
+        <div class="bg-white border-round-sm shadow-4">
+            <div class="col-12 p-0">
+                <span class="block p-2">Tổng thiết bị: 38</span>
+                <ul class="m-0 list-none p-0">
+                    <li class="p-1 line-height-2 flex align-items-center pl-3">
+                        <span class="border-circle bg-green-400 ml-2 mr-2" style="width: 8px; height: 8px;"></span>
+                        <label>Thiết bị sử dụng: 20</label>
+                    </li>
+                    <li class="p-1 line-height-2 flex align-items-center pl-3">
+                        <span class="border-circle bg-red-400 ml-2 mr-2" style="width: 8px; height: 8px;"></span>
+                        <label>Thiết bị hỏng: 10</label>
+                    </li>
+                    <li class="p-1 line-height-2 flex align-items-center pl-3">
+                        <span class="border-circle bg-yellow-400 ml-2 mr-2" style="width: 8px; height: 8px;"></span>
+                        <label>Thiết bị bảo trì: 5</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-3 pl-0 pr-0">
+        <div class="bg-white border-round-sm shadow-4">
+            <div class="col-12 p-0">
+                <div class="flex align-items-center">
+                    <span class="block p-2">Tổng tầng: 35</span>
+                </div>
+                <ul class="m-0 list-none p-0">
+                    <li class="p-1 line-height-2 flex align-items-center pl-3">
+                        <span class="border-circle bg-green-400 ml-2 mr-2" style="width: 8px; height: 8px;"></span>
+                        <label>Tầng sử dụng: 25</label>
+                    </li>
+                    <li class="p-1 line-height-2 flex align-items-center pl-3">
+                        <span class="border-circle bg-blue-400 ml-2 mr-2" style="width: 8px; height: 8px;"></span>
+                        <label>Tầng kinh doanh: 10</label>
+                    </li>
+                    <li class="p-1 line-height-2 flex align-items-center pl-3">
+                        <span class="border-circle surface-400 ml-2 mr-2" style="width: 8px; height: 8px;"></span>
+                        <label>Tầng hầm: 3</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="grid col-12 m-0">
+    <div class="xl:col-8 lg:col-8 pl-0 pt-0">
+        <div class="bg-white border-round-sm shadow-4 p-2">
+            <span class="p-2">Doanh thu</span>
+            <div class="col-12 p-0">
+                <div class="flex justify-content-center">
+                    <p-chart type="bar" [data]="basicData" [options]="basicOptions"
+                        [style]="{'width': '99%'}"></p-chart>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="xl:col-4 lg:col-4 pr-0 pt-0">
+        <div class="bg-white border-round-sm shadow-4 p-2">
+            <span class="p-2">Dịch vụ</span>
+            <div class="col-12 p-0">
+                <div class="flex justify-content-center">
+                    <p-chart type="pie" [data]="data" [options]="chartOptions" [style]="{'width': '50%'}"></p-chart>
+                </div>
+            </div>
+            a
+        </div>
+    </div>
+</div>
+<div class="grid col-12 m-0">
+    <div class="xl:col-5 lg:col-5 pl-0">
+        <div class="bg-white border-round-sm shadow-4 p-2">
+            <span class="p-2">Tin tức mới</span>
+            <div>
+                <p-table [value]="products">
+                    <ng-template pTemplate="header">
+                        <tr>
+                            <th id="1">Tên nhân viên</th>
+                            <th id="2">Ngày bắt đầu</th>
+                            <th id="3">Thâm niên</th>
+                            <th id="4">Vị trí</th>
+                        </tr>
+                    </ng-template>
+                    <ng-template pTemplate="body" let-product>
+                        <tr>
+                            <td>{{product.userName}}</td>
+                            <td>{{product.date}}</td>
+                            <td>{{product.seniority}}</td>
+                            <td>{{product.position}}</td>
+                        </tr>
+                    </ng-template>
+                </p-table>
+            </div>
+        </div>
+    </div>
+    <div class="xl:col-7 lg:col-7 pr-0">
+        <div class="bg-white border-round-sm shadow-4 p-2">
+            <span class="p-2">Thâm niên</span>
+            <div>
+                <p-table [value]="products">
+                    <ng-template pTemplate="header">
+                        <tr>
+                            <th id="1">Tên nhân viên</th>
+                            <th id="2">Ngày bắt đầu</th>
+                            <th id="3">Thâm niên</th>
+                            <th id="4">Vị trí</th>
+                        </tr>
+                    </ng-template>
+                    <ng-template pTemplate="body" let-product>
+                        <tr>
+                            <td>{{product.userName}}</td>
+                            <td>{{product.date}}</td>
+                            <td>{{product.seniority}}</td>
+                            <td>{{product.position}}</td>
+                        </tr>
+                    </ng-template>
+                </p-table>
+            </div>
+        </div>
+    </div>
+</div>
