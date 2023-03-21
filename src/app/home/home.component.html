@@ -1,9 +1,9 @@
 <div class="grid h-full p-0 col-12 m-0">
+    <app-header (changeEmitter)="openNav()" (changeIconCloseEmitter)="closeNav()"></app-header>
     <div id="mySidebar" class="sidebar p-0 shadow-4" style="margin-top: 48px;">
-
         <app-sidenav (changeEmitter)="openNav()"></app-sidenav>
     </div>
-    <div id="main" class="p-0 mt-6">
+    <div id="main" class="p-0 mt-8">
         <router-outlet></router-outlet>
     </div>
 </div>

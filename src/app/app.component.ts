@@ -7,16 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public isShowDivIf = false;
-  // openNav() {
-  //   this.isShowDivIf = !this.isShowDivIf;
-  //   let box = document.getElementById("mySidebar");
-  //   let main = document.getElementById("main");
-  //   if (box != null && main != null) {
-  //     box.setAttribute("style", "transition:0.3s; ");
-  //     main.setAttribute("style", "margin-left:10%; ");
-  //   }
-  // }
-
   openNav() {
     this.isShowDivIf = !this.isShowDivIf;
     let box = document.getElementById("mySidebar");

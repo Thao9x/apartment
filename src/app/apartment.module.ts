@@ -8,6 +8,10 @@ import { AvatarGroupModule } from 'primeng/avatargroup';
 import { CardModule } from 'primeng/card';
 import { ChartModule } from 'primeng/chart';
 import { ClickOutsideDirective } from './common/directive/click-outside.directive';
+import { PasswordModule } from 'primeng/password';
+import { InputTextModule } from 'primeng/inputtext';
+import { CheckboxModule } from 'primeng/checkbox';
+import { BadgeModule } from 'primeng/badge';
 
 @NgModule({
     declarations: [
@@ -21,7 +25,11 @@ import { ClickOutsideDirective } from './common/directive/click-outside.directiv
         AvatarGroupModule,
         CardModule,
         ChartModule,
-        TableModule
+        TableModule,
+        PasswordModule,
+        InputTextModule,
+        CheckboxModule,
+        BadgeModule
     ],
     exports: [
         FormsModule,
@@ -32,7 +40,11 @@ import { ClickOutsideDirective } from './common/directive/click-outside.directiv
         CardModule,
         ChartModule,
         TableModule,
-        ClickOutsideDirective
+        ClickOutsideDirective,
+        PasswordModule,
+        InputTextModule,
+        CheckboxModule,
+        BadgeModule
     ],
     providers: [DynamicDialogConfig, DynamicDialogRef],
 })

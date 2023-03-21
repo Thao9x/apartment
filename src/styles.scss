@@ -1,11 +1,16 @@
-
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     font-family: Poppins, sans-serif;
 }
+
 canvas {
     display: unset !important;
-    // height: 400px !important;
-    // width: 100% !important;
+}
+
+.p-error {
+    color: red;
+    font-size: 14px;
+    padding-top: 2px;
 }

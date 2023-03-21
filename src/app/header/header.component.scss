@@ -1,7 +1,7 @@
 .img {
     background-image: url(/assets/img/apartment.png);
     background-repeat: no-repeat;
-    height: 80px; 
+    height: 80px;
     background-color: #ffffff;
     background-size: 110px;
 }
@@ -21,7 +21,28 @@
     border-radius: 50%;
 }
 
-#profile{
+.pi-bell {
+    width: 2.25rem;
+    height: 2.25rem;
+    text-align: center;
+    align-items: center;
+    display: grid;
+    font-size: 1.25rem;
+}
+
+.pi-bell:hover {
+    background-color: #E0E0E0;
+    border-radius: 50%;
+}
+
+:host ::ng-deep .p-badge {
+    font-weight: 600;
+    min-width: 1.25rem !important;
+    height: 1.25rem !important;
+    line-height: 1.25rem !important;
+}
+
+#profile {
     transition: 0.3s;
 }
 
@@ -37,7 +58,7 @@
 
 .profile-dropdown-btn {
     display: flex;
-    width: 130px;
+    width: 190px;
     align-items: center;
     justify-content: space-between;
     font-size: 0.9rem;
@@ -53,7 +74,7 @@
     z-index: 2;
     background-color: #fff;
     border-radius: 5px;
-    margin-top: 10px;
+    margin-top: 20px;
     display: none;
 }
 
@@ -63,7 +84,7 @@
     display: unset;
 }
 
-.profile-dropdown-list.active::before{
+.profile-dropdown-list.active::before {
     content: "";
     transform: rotate(45deg);
     top: -7px;
@@ -81,7 +102,7 @@
     transition: 0.5s;
 }
 
-.profile-dropdown-lits-item:hover{
+.profile-dropdown-lits-item:hover {
     background-color: var(--surface-200);
     border-radius: 5px;
 }
@@ -97,12 +118,12 @@
 }
 
 .profile-dropdown-lits-item i {
-    font-size: 14px ;
+    font-size: 14px;
     margin-right: 7px;
 }
 
 .profile-dropdown-lits-item span {
-    font-size: 14px ;
+    font-size: 14px;
 }
 
 .fadein {
